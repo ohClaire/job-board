@@ -1,0 +1,67 @@
+
+body {
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  margin: 0px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  border: 2px solid black;
+  background: rgb(26, 188, 188);
+  flex-basis: auto;
+  width: 200px;
+}
+
+.profile {
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  border: 1px solid rgba(72, 72, 149, 0.876);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 0px;
+  padding-bottom: 0px; */
+}
+
+.paired {
+  /* display: flex;
+  height: 5%; */
+  gap: 10px;
+  /* justify-content: flex-start;
+  align-items: center; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid white;
+  flex: 0 1 30px;
+}
+/* 
+.paired:active {
+  background: gray;
+  border:gray;
+} */
+
+.align {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* height: 5%; */
+  padding-left: 10px;
+}
+
+.remove-border {
+  border-bottom: 0px; 
+}
+
+.icon {
+  height: 15px;
+  width: 15px;
+  /* padding: 12px; */
+}
