@@ -18,7 +18,7 @@
         <img class="profile__image" src="assets/user-profile.png" alt="profile-picture"/>
         <div class="profile__user">
           <p class="username">Hannah Celemen</p>
-          <div class="down-arrow">⌄</div>
+          <button class="down-arrow">⌄</button>
         </div>
       </section>
 
@@ -92,36 +92,40 @@
     </section>
 
     <div class="main">
-      <section class="main__top">
+      <section class="row">
         <button class="main__top-button"><img class="main__top-icon" src="assets/menu.png" alt="menu-icon" /></button>
-        <input type="text" name="search-bar" class="search-bar">
+        <!-- <label for="searches"></label> -->
+        <input type="text" id="searches" name="search-bar" class="search-bar" placeholder="Search...">
         <button class="main__top-button"><img class="main__top-icon" src="assets/add-user.png" alt="add-user-icon" /></button>
         <button class="main__top-button"><img class="main__top-icon" src="assets/add-calendar.png" alt="add-calendar-icon"/></button>
         <button class="main__top-button"><img class="main__top-icon" src="assets/thumbnail.png" alt="thumbnail-icon"/></button>
       </section>
   
-      <section class="title-area">
-        <section>
-          <h1>Customer Service Representative</h1>
-          <p>San Francisco, CA</p>
-          <a>Preview this post</a>
+      <section class="job-description ">
+        <section class="job__title">
+          <h1>Junior Software Developer</h1>
+          <div class="job__preview row">
+            <div class="row job__location"><img class="nav__icon" src="assets/place-marker.png" alt="marker-icon"/><p>Denver, CO </p></div>
+            <a class="preview-link" href="https://www.linkedin.com/jobs/view/3245400630/?alternateChannel=search&refId=iG4TC9axStzhuV5e%2FWIIVA%3D%3D&trackingId=yow8eB3caEdysZ3w6eAFxw%3D%3D">Preview this post</a>
+          </div>
+          
         </section>
-        <section>
-          <p><img/>Open</p>
-          <button><img/>bookmark icon</button>
-          <button><img/>edit icon</button>
-          <button><img/>delete icon</button>
+        <section class="buttons__container">
+          <div class="job-status"><img class="nav__icon" src="assets/approve.png" alt="green-status"/>Open</div>
+          <button class="job__button"><img class="job__icons" src="assets/heart.png" alt="favorite-icon"/></button>
+          <button class="job__button"><img class="job__icons" src="assets/pen.png" alt="edit-icon"/></button>
+          <button class="job__button"><img class="job__icons" src="assets/trashcan.png" alt="delete-icon" /></button>
         </section>
       </section>
   
-      <nav class="navbar">
-        <p>SUMMARY</p>
-        <p>APPLICANTS</p>
-        <p>JOB BOARD</p>
-        <p>INTERVIEWS</p>
-        <p>ACTIVITY</p>
-        <p>BROADCAST</p>
-        <p>NOTIFICATIONS</p>
+      <nav class="nav__job-items">
+        <button class="nav__job-button">SUMMARY</button>
+        <button class="nav__job-button">APPLICANTS</button>
+        <button class="nav__job-button">JOB BOARD</button>
+        <button class="nav__job-button">INTERVIEWS</button>
+        <button class="nav__job-button">ACTIVITY</button>
+        <button class="nav__job-button">BROADCAST</button>
+        <button class="nav__job-button">NOTIFICATIONS</button>
       </nav>
   
       <section class="summary">
@@ -142,8 +146,8 @@
             <br/>
           </section>
         </section>
-<!--   
-        <main class="container">
+  
+        <!-- <main class="container">
           <section class="job-description">
             <header>
               <p>JOB DESCRIPTION</p>
@@ -220,8 +224,8 @@
             <p>You can automatically upload resumes to this job by emailing the address below.</p>
             <input type="text">
           </section>
-        </main>
-      </section> -->
+        </main> -->
+      </section>
     </div>
   </body>
 </html>
