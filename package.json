@@ -1,0 +1,22 @@
+{
+  "name": "job-board",
+  "version": "1.0.0",
+  "description": "This dashboard is a re-creation of a static comp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohClaire/job-board.git"
+  },
+  "author": "Hannah Celemen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohClaire/job-board/issues"
+  },
+  "homepage": "https://github.com/ohClaire/job-board#readme",
+  "dependencies": {
+    "chart.js": "^3.9.1"
+  }
+}
