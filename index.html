@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <title>Static Comp Challenge</title>
   </head>
@@ -15,87 +15,89 @@
   <body>
     <section class="sidebar column">
       <section class="profile column">
-        <img/>
-        <p>Profile Name</p>
+        <img class="profile__image" src="assets/user-profile.png" alt="profile-picture"/>
+        <div class="profile__user">
+          <p class="username">Hannah Celemen</p>
+          <div class="down-arrow">⌄</div>
+        </div>
       </section>
 
-      <section class="list column">
-        <p>Main</p>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+      <section class="navbar column">
+        <p class="nav__title align">Main</p>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/home.png" alt="home-icon"/>
           <p>HOME</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/briefcase.png" alt="job-icon"/>
           <p>JOBS</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/resume.png" alt="resume-icon"/>
           <p>RESUMES</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/list.png" alt="list-icon"/>
           <p>TASKS</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/calendar.png" alt="calendar-icon"/>
           <p>CALENDAR</p>
-        </div>
+        </button>
       </section>
 
-      <section class="list column">
-        <p>Admin</p>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+      <section class="navbar column">
+        <p class="nav__title align">Admin</p>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/users.png" alt="users-icon"/>
           <p>USERS</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/location.png" alt="location-icon"/>
           <p>LOCATIONS</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/workflow.png" alt="workflow-icon"/>
           <p>WORKFLOWS</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/job-seeker.png" alt="job-seeker-icon"/>
           <p>JOB BOARDS</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/social.png" alt="social-icon"/>
           <p>SOCIAL</p>
-        </div>
+        </button>
       </section>
 
-      <section class="list column">
-        <p>Categories</p>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+      <section class="navbar column remove-border">
+        <p class="nav__title align">Categories</p>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/octopus.png" alt="octopus"/>
           <p>Administrative</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/design.png" alt="flower-icon"/>
           <p>Design</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/star.png" alt="star-icon"/>
           <p>Executive</p>
-        </div>
-        <div class="paired">
-          <img class="icon" src="assets/check-circle.gif" alt="check-circle"/>
+        </button>
+        <button class="nav__button align">
+          <img class="nav__icon" src="assets/rainbow.png" alt="rainbow-icon"/>
           <p>Human Resources</p>
-        </div>
+        </button>
       </section>
     </section>
 
-    <div class="main-body">
-      <section class="top-area">
-        <span><img/>hamburger icon</span>
-        <span><img/>hamburger icon</span>
-        <input type="text" name="search-bar">
-        <span><img/>add person icon</span>
-        <span><img/>add calendar icon</span>
-        <span><img/>grid icon</span>
+    <div class="main">
+      <section class="main__top">
+        <button class="main__top-button"><img class="main__top-icon" src="assets/menu.png" alt="menu-icon" /></button>
+        <input type="text" name="search-bar" class="search-bar">
+        <button class="main__top-button"><img class="main__top-icon" src="assets/add-user.png" alt="add-user-icon" /></button>
+        <button class="main__top-button"><img class="main__top-icon" src="assets/add-calendar.png" alt="add-calendar-icon"/></button>
+        <button class="main__top-button"><img class="main__top-icon" src="assets/thumbnail.png" alt="thumbnail-icon"/></button>
       </section>
   
       <section class="title-area">
@@ -140,7 +142,7 @@
             <br/>
           </section>
         </section>
-  
+<!--   
         <main class="container">
           <section class="job-description">
             <header>
@@ -219,7 +221,7 @@
             <input type="text">
           </section>
         </main>
-      </section>
+      </section> -->
     </div>
   </body>
 </html>

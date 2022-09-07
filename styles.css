@@ -11,36 +11,68 @@ body {
 }
 
 .sidebar {
-  border: 2px solid black;
-  background: rgb(26, 188, 188);
-  flex-basis: auto;
+  border: 2px solid rgb(137 50 50);
+  background: #E7B7C8;
+  flex: 0 1 200px;
   width: 200px;
 }
 
 .profile {
   align-items: center;
   justify-content: center;
+  padding-top: 20px; 
+  font-weight: bold;
+  color: #3b2323;
 }
 
-.list {
-  border: 1px solid rgba(72, 72, 149, 0.876);
-  font-size: 12px;
+.profile__image {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: 4px solid white;
+}
+
+.profile__user {
+  align-items: center;
   display: flex;
-  justify-content: center;
-  /* padding-top: 0px;
-  padding-bottom: 0px; */
 }
 
-.paired {
-  /* display: flex;
-  height: 5%; */
+.down-arrow {
+  font-size: 20px;
+  margin-top: -12px;
+  margin-left: 4px;
+  color: #3b2323;
+}
+
+.navbar {
+  border-top: 2px solid rgb(137 50 50);
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  padding: 12px 0px;
+}
+
+.nav__title {
+  color: rgb(79 51 51);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+.nav__button {
   gap: 10px;
-  /* justify-content: flex-start;
-  align-items: center; */
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border: 1px solid white;
   flex: 0 1 30px;
+  background-color: #E7B7C8;
+  color: #3b2323;
+  border: 0px;
+  padding: 0px;
+  /* border: 1px solid gray; */
+}
+
+.nav__button:hover {
+  background-color: #CDB3D4;
+  font-weight: bold;
 }
 /* 
 .paired:active {
@@ -52,16 +84,40 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* height: 5%; */
-  padding-left: 10px;
+  padding-left: 16px;
 }
 
-.remove-border {
-  border-bottom: 0px; 
-}
-
-.icon {
-  height: 15px;
-  width: 15px;
+.nav__icon {
+  height: 18px;
+  width: 18px;
   /* padding: 12px; */
 }
+
+.main {
+  flex: 1 1 0px;
+}
+
+.main__top {
+  display: flex;
+}
+
+.main__top-button {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.main__top-button:hover {
+  background-color: #E7B7C8;
+}
+
+.main__top-icon {
+  height: 32px;
+  width: 32px;
+  margin-top: 3px;
+}
+
+.search-bar {
+  width: 60%;
+}
+
