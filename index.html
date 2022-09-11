@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <title>Static Comp Challenge</title>
+    <title>Job Board - Static Comp Challenge</title>
   </head>
 
   <body>
@@ -129,103 +129,127 @@
       </nav>
   
       <section class="summary">
-        <section class="statistics">
-          <section class="pie charts">
-            <img/>
-            <img/>
-            <img/>
-            <p>TOTALS - Out of 5,231 views</p>
-          </section>
-          <section class="graph">
-            <img/>
-            <p>APPLICANTS/DAY</p>
-          </section>
-          <section>
-            <br/>
-            <button>arrow</button>
-            <br/>
-          </section>
-        </section>
-  
-        <!-- <main class="container">
-          <section class="job-description">
-            <header>
-              <p>JOB DESCRIPTION</p>
-              <button><img/>EDIT</button>
-            </header>
-    
-            <section>
-              <article>
-                <p>Position Title</p>
-                <p>Customer Service Representative</p>
-              </article>
-              <article>
-                <p>Location</p>
-                <p>San Francisco, CA</p>
-              </article>
-              <article>
-                <p>Employment Type</p>
-                <p>Full-time</p>
-              </article>
-              
-              <article>
-                <p>Experience</p>
-                <p>Mid-level</p>
-              </article>
-    
-              <article>
-                <p>Status</p>
-                <p>Open</p>
-              </article>
-    
-              <article>
-                <p>Description</p>
-                <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various....</p>
-              </article>
-    
-              <article>
-                <p>Hiring Lead</p>
-                <img/>
-                <p>Tom Tizzy</p>
-              </article>
-    
-              <article>
-                <p>Approved Salary</p>
-                <p><strong>$58,000</strong></p>
-              </article>
-            </section>
-  
+        <section class="main-body">
+          <section class="charts-section align">
+            <div class="doughnut-charts row">
+              <div class="donut-chart">
+                <canvas id="myChart1"></canvas>
+              </div>
+              <div class="donut-chart">
+                <canvas id="myChart2"></canvas>
+              </div>
+              <div class="donut-chart">
+                <canvas id="myChart3"></canvas>
+              </div>
+            </div>
+
+            <div class="right-charts">
+              <div class="bar-chart">
+                <canvas  id="myChart4"></canvas>
+              </div>
+              <section>
+                <p class="totals">APPLICANTS/DAY</p>
+              </section>
+            </div>
           </section>
   
-          <section>
-            <button>Post to Facebook</button>
-            <button>Tweet this Job</button>
-            <button>Post to Linkedin</button>
+        <main class="container">
+          <div class="left-side">
+
+            <table>
+                <caption>JOB DESCRIPTION</caption>
+                <th>
+                  <button><img class="nav__icon" src="assets/pen.png" alt="edit-icon"/>EDIT</button>
+                </th>
+          
+              <tbody>
+                <tr>
+                  <th scope="row">POSITION TITLE</th>
+                  <td>Junior Software Developer</td>
+                </tr>
+                <tr>
+                  <th scope="row">LOCATION</th>
+                  <td>Denver, CO</td>
+                </tr>
+                <tr>
+                  <th scope="row">EMPLOYMENT TYPE</th>
+                  <td>Full-time</td>
+                </tr>
+                <tr>
+                  <th scope="row">EXPERIENCE</th>
+                  <td>Mid-level</td>
+                </tr>
+                <tr>
+                  <th scope="row">STATUS</th>
+                  <td>Open</td>
+                </tr>
+                <tr>
+                  <th scope="row">DESCRIPTION</th>
+                  <td>The Junior Software Developer is responsible for developing and maintaining embedded software used in a variety of products including set top boxes and remote controls for satellite and internet based whole home audio/video entertainment solutions and other connected devices.</td>
+                </tr>
+                <tr>
+                  <th scope="row">HIRING LEAD</th>
+                  <td>Esther Holmes</td>
+                </tr>
+                <tr>
+                  <th scope="row">APPROVED SALARY</th>
+                  <td>$78,000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+
+          </div>
   
-            <h2>Link to this Job</h2>
-            <p>Lorem ipsum...</p>
-            <span>
-              <input type="text">
-              <button>Copy</button>
-            </span>
+          <section class="right-side">
+            <div class="buttons">
+              <button class="social">Post to Facebook</button>
+              <button class="social">Tweet this Job</button>
+              <button class="social">Post to Linkedin</button>
+            </div>
+
+            <div>
+              <div class="social__title row">
+                <img class="social__icon" src="./assets/globe.png" alt="globe-icon"/>
+                <h2>Link to this Job</h2>
+              </div>
+              <p>Lorem ipsum...</p>
+              <div class="row">
+                <input type="text">
+                <button>Copy</button>
+              </div>
+            </div>
             
             <br/>
-  
-            <h2>Use the Button Widget</h2>
-            <p>The widget embeds the buttons for sharing the job for submitting a resume on your website</p>
-            <span>
-              <input type="text">
-              <button>Copy</button>
-            </span>
+            
+            <div>
+              <div class="social__title row">
+                <img class="social__icon" src="./assets/qr-code.png" alt="qr-icon"/>
+                <h2>Use the Button Widget</h2>
+              </div>
+              <p>The widget embeds the buttons for sharing the job for submitting a resume on your website</p>
+              <div class="row">
+                <input type="text">
+                <button>Copy</button>
+              </div>
+            </div>
   
             <br/>
-  
-            <h2>Upload Resumes by Email</h2>
-            <p>You can automatically upload resumes to this job by emailing the address below.</p>
-            <input type="text">
+            <div>
+              <div class="social__title row">
+                <img class="social__icon" src="./assets/paper-plane.png" alt="plane-icon"/>
+                <h2>Upload Resumes by Email</h2>
+              </div>
+              <p>You can automatically upload resumes to this job by emailing the address below.</p>
+              <input type="text">
+            </div>
           </section>
-        </main> -->
+        </main>
+
       </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="src/scripts.js"></script>
   </body>
 </html>

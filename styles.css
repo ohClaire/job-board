@@ -194,7 +194,7 @@ body {
 
 .preview-link {
   font-weight: bold;
-  color: #63BCC9;
+  color: #047788;
   
 }
 
@@ -218,4 +218,142 @@ h1, p {
 
 .nav__job-button:hover {
   background-color: #E7B7C8;
+}
+
+.charts-section {
+  display: flex;
+  flex: 1 1 0px;
+  align-items: end;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.doughnut-charts {
+  gap: 20px;
+  width: 50%;
+  flex: 1 1 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charts {
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 0px;
+} 
+
+.totals {
+  border: 1px solid #63BCC9;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0px;
+  padding-right: 40px;
+  width: 400px;
+  height: 400px;
+}
+
+canvas {
+  position: relative;
+}
+
+.donut-chart {
+  height: 200px;
+  width: 200px;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #63BCC9;
+  border-radius: 2px;
+  font-weight: bolder;
+  gap: 20px;
+}
+
+.account {
+  justify-content: flex-start;
+  border: 1px solid black;
+  padding-left: 40px;
+
+}
+
+.account p {
+  border: 1px solid salmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.right-side {
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social {
+  padding: 10px;
+  margin: 0px;
+
+}
+
+.social__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social__icon {
+  height: 22px;
+  width: 22px;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+  width: fit-content;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid purple;
+  flex: 1 1 0px;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+th, td {
+  padding: 30px;
 }
