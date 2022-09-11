@@ -11,7 +11,7 @@ body {
 }
 
 .sidebar {
-  border: 2px solid rgb(137 50 50);
+  border: 2px solid rgb(165, 88, 88);
   background: #E7B7C8;
   flex: 0 1 200px;
   width: 200px;
@@ -23,6 +23,10 @@ body {
   padding-top: 20px; 
   font-weight: bold;
   color: #3b2323;
+}
+
+.username {
+  margin: 6px;
 }
 
 .profile__image {
@@ -42,10 +46,12 @@ body {
   margin-top: -12px;
   margin-left: 4px;
   color: #3b2323;
+  background-color: #E7B7C8;
+  border: 0px;
 }
 
 .navbar {
-  border-top: 2px solid rgb(137 50 50);
+  border-top: 2px solid rgb(165, 88, 88);
   display: flex;
   font-size: 12px;
   justify-content: center;
@@ -56,7 +62,7 @@ body {
   color: rgb(79 51 51);
   font-size: 14px;
   font-weight: bold;
-  margin-top: 12px;
+  margin-top: 8px;
   margin-bottom: 0px;
 }
 
@@ -76,8 +82,8 @@ body {
 }
 /* 
 .paired:active {
-  background: gray;
-  border:gray;
+  background: rgb(164, 143, 143);
+  border:rgb(164, 143, 143);
 } */
 
 .align {
@@ -97,13 +103,12 @@ body {
   flex: 1 1 0px;
 }
 
-.main__top {
+.row {
   display: flex;
 }
 
 .main__top-button {
-  border: 1px solid black;
-  border-radius: 4px;
+  border: 1px solid rgb(164, 143, 143);
   background-color: white;
 }
 
@@ -118,6 +123,237 @@ body {
 }
 
 .search-bar {
-  width: 60%;
+  flex: 1 1 0px;
+  border: 1px solid rgb(164, 143, 143);
+  padding-left: 10px;  
 }
 
+.job-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.job-status {
+  border: 1px solid #63BCC9;
+  border-radius: 16px;
+  gap: 2px;
+  display: flex;
+  justify-content: center;
+  padding: 4px
+}
+
+/* .status-icon {
+  width: 18px;
+  height: 18px;
+} */
+
+.buttons__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.job__button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(164, 143, 143);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job__button:hover {
+  background-color: rgb(247, 222, 222);
+}
+
+.job__icons {
+  height: 18px;
+  width: 18px;
+}
+
+.job__title {
+  padding: 10px;
+
+}
+.job__location {
+  color: rgb(137 50 50);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+}
+
+.job__preview {
+  gap: 10px;
+}
+
+.preview-link {
+  font-weight: bold;
+  color: #047788;
+  
+}
+
+h1, p {
+  margin: 0px; 
+  padding: 0px;
+}
+
+.nav__job-items {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 30px 50px;
+}
+
+.nav__job-button {
+  background-color: white;
+  border: 0px;
+  padding: 6px;
+}
+
+.nav__job-button:hover {
+  background-color: #E7B7C8;
+}
+
+.charts-section {
+  display: flex;
+  flex: 1 1 0px;
+  align-items: end;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.doughnut-charts {
+  gap: 20px;
+  width: 50%;
+  flex: 1 1 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charts {
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 0px;
+} 
+
+.totals {
+  border: 1px solid #63BCC9;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0px;
+  padding-right: 40px;
+  width: 400px;
+  height: 400px;
+}
+
+canvas {
+  position: relative;
+}
+
+.donut-chart {
+  height: 200px;
+  width: 200px;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #63BCC9;
+  border-radius: 2px;
+  font-weight: bolder;
+  gap: 20px;
+}
+
+.account {
+  justify-content: flex-start;
+  border: 1px solid black;
+  padding-left: 40px;
+
+}
+
+.account p {
+  border: 1px solid salmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.right-side {
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social {
+  padding: 10px;
+  margin: 0px;
+
+}
+
+.social__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social__icon {
+  height: 22px;
+  width: 22px;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+  width: fit-content;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid purple;
+  flex: 1 1 0px;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+th, td {
+  padding: 30px;
+}

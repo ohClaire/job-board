@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <title>Static Comp Challenge</title>
+    <title>Job Board - Static Comp Challenge</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <img class="profile__image" src="assets/user-profile.png" alt="profile-picture"/>
         <div class="profile__user">
           <p class="username">Hannah Celemen</p>
-          <div class="down-arrow">⌄</div>
+          <button class="down-arrow">⌄</button>
         </div>
       </section>
 
@@ -92,136 +92,164 @@
     </section>
 
     <div class="main">
-      <section class="main__top">
+      <section class="row">
         <button class="main__top-button"><img class="main__top-icon" src="assets/menu.png" alt="menu-icon" /></button>
-        <input type="text" name="search-bar" class="search-bar">
+        <!-- <label for="searches"></label> -->
+        <input type="text" id="searches" name="search-bar" class="search-bar" placeholder="Search...">
         <button class="main__top-button"><img class="main__top-icon" src="assets/add-user.png" alt="add-user-icon" /></button>
         <button class="main__top-button"><img class="main__top-icon" src="assets/add-calendar.png" alt="add-calendar-icon"/></button>
         <button class="main__top-button"><img class="main__top-icon" src="assets/thumbnail.png" alt="thumbnail-icon"/></button>
       </section>
   
-      <section class="title-area">
-        <section>
-          <h1>Customer Service Representative</h1>
-          <p>San Francisco, CA</p>
-          <a>Preview this post</a>
+      <section class="job-description ">
+        <section class="job__title">
+          <h1>Junior Software Developer</h1>
+          <div class="job__preview row">
+            <div class="row job__location"><img class="nav__icon" src="assets/place-marker.png" alt="marker-icon"/><p>Denver, CO </p></div>
+            <a class="preview-link" href="https://www.linkedin.com/jobs/view/3245400630/?alternateChannel=search&refId=iG4TC9axStzhuV5e%2FWIIVA%3D%3D&trackingId=yow8eB3caEdysZ3w6eAFxw%3D%3D">Preview this post</a>
+          </div>
+          
         </section>
-        <section>
-          <p><img/>Open</p>
-          <button><img/>bookmark icon</button>
-          <button><img/>edit icon</button>
-          <button><img/>delete icon</button>
+        <section class="buttons__container">
+          <div class="job-status"><img class="nav__icon" src="assets/approve.png" alt="green-status"/>Open</div>
+          <button class="job__button"><img class="job__icons" src="assets/heart.png" alt="favorite-icon"/></button>
+          <button class="job__button"><img class="job__icons" src="assets/pen.png" alt="edit-icon"/></button>
+          <button class="job__button"><img class="job__icons" src="assets/trashcan.png" alt="delete-icon" /></button>
         </section>
       </section>
   
-      <nav class="navbar">
-        <p>SUMMARY</p>
-        <p>APPLICANTS</p>
-        <p>JOB BOARD</p>
-        <p>INTERVIEWS</p>
-        <p>ACTIVITY</p>
-        <p>BROADCAST</p>
-        <p>NOTIFICATIONS</p>
+      <nav class="nav__job-items">
+        <button class="nav__job-button">SUMMARY</button>
+        <button class="nav__job-button">APPLICANTS</button>
+        <button class="nav__job-button">JOB BOARD</button>
+        <button class="nav__job-button">INTERVIEWS</button>
+        <button class="nav__job-button">ACTIVITY</button>
+        <button class="nav__job-button">BROADCAST</button>
+        <button class="nav__job-button">NOTIFICATIONS</button>
       </nav>
   
       <section class="summary">
-        <section class="statistics">
-          <section class="pie charts">
-            <img/>
-            <img/>
-            <img/>
-            <p>TOTALS - Out of 5,231 views</p>
+        <section class="main-body">
+          <section class="charts-section align">
+            <div class="doughnut-charts row">
+              <div class="donut-chart">
+                <canvas id="myChart1"></canvas>
+              </div>
+              <div class="donut-chart">
+                <canvas id="myChart2"></canvas>
+              </div>
+              <div class="donut-chart">
+                <canvas id="myChart3"></canvas>
+              </div>
+            </div>
+
+            <div class="right-charts">
+              <div class="bar-chart">
+                <canvas  id="myChart4"></canvas>
+              </div>
+              <section>
+                <p class="totals">APPLICANTS/DAY</p>
+              </section>
+            </div>
           </section>
-          <section class="graph">
-            <img/>
-            <p>APPLICANTS/DAY</p>
-          </section>
-          <section>
-            <br/>
-            <button>arrow</button>
-            <br/>
-          </section>
-        </section>
-<!--   
+  
         <main class="container">
-          <section class="job-description">
-            <header>
-              <p>JOB DESCRIPTION</p>
-              <button><img/>EDIT</button>
-            </header>
-    
-            <section>
-              <article>
-                <p>Position Title</p>
-                <p>Customer Service Representative</p>
-              </article>
-              <article>
-                <p>Location</p>
-                <p>San Francisco, CA</p>
-              </article>
-              <article>
-                <p>Employment Type</p>
-                <p>Full-time</p>
-              </article>
-              
-              <article>
-                <p>Experience</p>
-                <p>Mid-level</p>
-              </article>
-    
-              <article>
-                <p>Status</p>
-                <p>Open</p>
-              </article>
-    
-              <article>
-                <p>Description</p>
-                <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various....</p>
-              </article>
-    
-              <article>
-                <p>Hiring Lead</p>
-                <img/>
-                <p>Tom Tizzy</p>
-              </article>
-    
-              <article>
-                <p>Approved Salary</p>
-                <p><strong>$58,000</strong></p>
-              </article>
-            </section>
+          <div class="left-side">
+
+            <table>
+                <caption>JOB DESCRIPTION</caption>
+                <th>
+                  <button><img class="nav__icon" src="assets/pen.png" alt="edit-icon"/>EDIT</button>
+                </th>
+          
+              <tbody>
+                <tr>
+                  <th scope="row">POSITION TITLE</th>
+                  <td>Junior Software Developer</td>
+                </tr>
+                <tr>
+                  <th scope="row">LOCATION</th>
+                  <td>Denver, CO</td>
+                </tr>
+                <tr>
+                  <th scope="row">EMPLOYMENT TYPE</th>
+                  <td>Full-time</td>
+                </tr>
+                <tr>
+                  <th scope="row">EXPERIENCE</th>
+                  <td>Mid-level</td>
+                </tr>
+                <tr>
+                  <th scope="row">STATUS</th>
+                  <td>Open</td>
+                </tr>
+                <tr>
+                  <th scope="row">DESCRIPTION</th>
+                  <td>The Junior Software Developer is responsible for developing and maintaining embedded software used in a variety of products including set top boxes and remote controls for satellite and internet based whole home audio/video entertainment solutions and other connected devices.</td>
+                </tr>
+                <tr>
+                  <th scope="row">HIRING LEAD</th>
+                  <td>Esther Holmes</td>
+                </tr>
+                <tr>
+                  <th scope="row">APPROVED SALARY</th>
+                  <td>$78,000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+
+          </div>
   
-          </section>
-  
-          <section>
-            <button>Post to Facebook</button>
-            <button>Tweet this Job</button>
-            <button>Post to Linkedin</button>
-  
-            <h2>Link to this Job</h2>
-            <p>Lorem ipsum...</p>
-            <span>
-              <input type="text">
-              <button>Copy</button>
-            </span>
+          <section class="right-side">
+            <div class="buttons">
+              <button class="social">Post to Facebook</button>
+              <button class="social">Tweet this Job</button>
+              <button class="social">Post to Linkedin</button>
+            </div>
+
+            <div>
+              <div class="social__title row">
+                <img class="social__icon" src="./assets/globe.png" alt="globe-icon"/>
+                <h2>Link to this Job</h2>
+              </div>
+              <p>Lorem ipsum...</p>
+              <div class="row">
+                <input type="text">
+                <button>Copy</button>
+              </div>
+            </div>
             
             <br/>
-  
-            <h2>Use the Button Widget</h2>
-            <p>The widget embeds the buttons for sharing the job for submitting a resume on your website</p>
-            <span>
-              <input type="text">
-              <button>Copy</button>
-            </span>
+            
+            <div>
+              <div class="social__title row">
+                <img class="social__icon" src="./assets/qr-code.png" alt="qr-icon"/>
+                <h2>Use the Button Widget</h2>
+              </div>
+              <p>The widget embeds the buttons for sharing the job for submitting a resume on your website</p>
+              <div class="row">
+                <input type="text">
+                <button>Copy</button>
+              </div>
+            </div>
   
             <br/>
-  
-            <h2>Upload Resumes by Email</h2>
-            <p>You can automatically upload resumes to this job by emailing the address below.</p>
-            <input type="text">
+            <div>
+              <div class="social__title row">
+                <img class="social__icon" src="./assets/paper-plane.png" alt="plane-icon"/>
+                <h2>Upload Resumes by Email</h2>
+              </div>
+              <p>You can automatically upload resumes to this job by emailing the address below.</p>
+              <input type="text">
+            </div>
           </section>
         </main>
-      </section> -->
+
+      </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="src/scripts.js"></script>
   </body>
 </html>
