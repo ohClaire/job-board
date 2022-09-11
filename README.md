@@ -19,6 +19,7 @@ The overall layout for this page was more complicated than I anticipated. I spen
 
 # Future Features
 * Create a Project Board
+* Add styling to Table to better reflect comp
 * DRY up the CSS
 * Add responsiveness with breakpoints for screen size
 * Improve accessibility
