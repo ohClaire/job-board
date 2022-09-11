@@ -1,5 +1,5 @@
 # Job Board
-![Static Comp]()
+![Static Comp](https://media.giphy.com/media/xXyuooOnM0kHXqYSzW/giphy.gif)
 
 # Tech Stack
 - HTML
