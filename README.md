@@ -26,7 +26,7 @@ The overall layout for this page was more complicated than I anticipated. I spen
 * Pass WAVE tests
 * Continue to explore aria to make the page more accessible
 
-#Credits
+# Credits
 
 All `.png` icons from Icons8
 
