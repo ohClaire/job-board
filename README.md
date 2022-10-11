@@ -27,7 +27,5 @@ The overall layout for this page was more complicated than I anticipated. I spen
 * Continue to explore aria to make the page more accessible
 
 # Credits
-
+Thank you to [Icons8](https://icons8.com/) for letting me use their icons for free!
 All `.png` icons from Icons8
-
-
